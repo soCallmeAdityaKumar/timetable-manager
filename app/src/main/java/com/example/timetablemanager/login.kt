@@ -16,29 +16,35 @@ class login:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
-        val logintoRegister:TextView=findViewById(R.id.logintoRegister)
+        val logInToRegister:TextView=findViewById(R.id.logintoRegister)
 
-        logintoRegister?.setOnClickListener {
+        logInToRegister?.setOnClickListener {
             val intent = Intent(this@login, register::class.java)
             startActivity(intent)
         }
         val loginEmail:EditText=findViewById(R.id.loginEmail)
-        val registerPassword:EditText=findViewById(R.id.loginPassword)
+        val loginPassword:EditText=findViewById(R.id.loginPassword)
         val loginButton:Button=findViewById(R.id.loginButton)
+        val forgotPassword:TextView=findViewById(R.id.logintoForgotPassword)
 
-            loginButton.setOnClickListener {
+        forgotPassword?.setOnClickListener {
+            val intent=Intent(this@login,forgotpassword::class.java)
+            startActivity(intent)
+        }
+
+            loginButton?.setOnClickListener {
 
                 if (loginEmail.text.isEmpty()){
                     Toast.makeText(this@login,
                         "Please enter the Email",
                         Toast.LENGTH_LONG).show()
-                } else if (registerPassword.text.isEmpty()){
+                } else if (loginPassword.text.isEmpty()){
                     Toast.makeText(this@login,
                         "Please enter the password",
                         Toast.LENGTH_LONG).show()
                 } else {
                     val email:String=loginEmail.text.toString()
-                    val password:String=registerPassword.text.toString()
+                    val password:String=loginPassword.text.toString()
 
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
                         .addOnCompleteListener { task ->

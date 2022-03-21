@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/curve.xml" value="0.2395" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2165" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/anthon.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/font.xml" value="0.14010416666666667" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/forgotpassword.xml" value="0.16" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_login.xml" value="0.15670289855072464" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/login.xml" value="0.264" />
-        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/register.xml" value="0.176" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/register.xml" value="0.264" />
       </map>
     </option>
   </component>
