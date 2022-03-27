@@ -1,6 +1,7 @@
 package com.example.timetablemanager
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -21,6 +22,8 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.example.timetablemanager.futuretask.FutureTask
 import com.example.timetablemanager.futuretask.FutureTaskRecyclerViewAdapter
+import com.example.timetablemanager.futuretask.addtask
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.internal.ContextUtils.getActivity
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
@@ -39,7 +42,11 @@ class MainActivity : AppCompatActivity() {
         val adapter=FragmentViewPagerAdapter(supportFragmentManager,lifecycle)
         viewpager.adapter=adapter
 
-
+            val addingactionbutton=findViewById<FloatingActionButton>(R.id.AddingActionButton)
+        addingactionbutton?.setOnClickListener {
+            val intent = Intent(this,addtask::class.java)
+            startActivity(intent)
+        }
 
 
 

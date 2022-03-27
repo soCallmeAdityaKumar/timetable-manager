@@ -38,9 +38,7 @@ lateinit var navController: NavController
     ): View? {
         // Inflate the layout for this fragment
         val view= inflater.inflate(R.layout.fragment_future_task, container, false)
-        view.findViewById<FloatingActionButton>(R.id.AddingActionButton).setOnClickListener {
-            findNavController().navigate(R.id.action_futureTask_to_addTask)
-        }
+
         return view
     }
 
