@@ -38,22 +38,21 @@ lateinit var navController: NavController
     ): View? {
         // Inflate the layout for this fragment
         val view= inflater.inflate(R.layout.fragment_future_task, container, false)
-
-        view.findViewById<FloatingActionButton>(R.id.AddingActionButton)?.setOnClickListener {
-            view.findNavController().navigate(R.id.action_futureTask_to_addTask)
+        view.findViewById<FloatingActionButton>(R.id.AddingActionButton).setOnClickListener {
+            findNavController().navigate(R.id.action_futureTask_to_addTask)
         }
-
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
         val FutureRecylerView=view.findViewById<RecyclerView>(R.id.FutureTaskRecyclerView)
         FutureRecylerView?.layoutManager= LinearLayoutManager(activity)
         val items=fetchData()
         FutureRecylerView?.adapter=FutureTaskRecyclerViewAdapter(items)
+
+
+
 
 
     }

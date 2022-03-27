@@ -13,10 +13,12 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:background="?attr/colorPrimary"
-            android:layout_height="?attr/actionBarSize"/>
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
+            android:background="#b5179e"
             android:layout_height="wrap_content"
             android:id="@+id/tabLayout" />
 
@@ -24,9 +26,9 @@
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/viewpager"></androidx.viewpager2.widget.ViewPager2>
+            android:background="@drawable/viewpager"/>
+
+
     </LinearLayout>
-
-
 
 </FrameLayout>
