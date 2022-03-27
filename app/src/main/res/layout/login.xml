@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/register3"
+    android:background="@drawable/login"
     android:layout_height="match_parent">
 
     <TextView
@@ -12,15 +12,14 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="TIMETABLE MANAGER"
-        android:textColor="#9bf6ff"
-        android:textSize="40sp"
+        android:textColor="#bc00dd"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.304" />
+        app:layout_constraintVertical_bias="0.301" />
 
     <TextView
         android:id="@+id/login"
@@ -28,12 +27,12 @@
         android:layout_height="wrap_content"
         android:requiresFadingEdge="horizontal"
         android:text="Login"
-        android:textColor="#ff7d00"
-        android:textSize="25sp"
+        android:textColor="#ea698b"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/loginEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TimetableManagerHeadinglogin"
         app:layout_constraintVertical_bias="0.181" />
@@ -43,11 +42,12 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="-20dp"
-        android:background="@color/white"
-        android:backgroundTint="#ffbf69"
+        android:background="@drawable/curve"
+        android:backgroundTint="#6d23b6"
         android:padding="15dp"
         android:text="Email Id"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -60,38 +60,39 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:background="@color/white"
-        android:backgroundTint="#ffbf69"
+        android:background="@drawable/curve"
+        android:backgroundTint="#6d23b6"
         android:padding="15dp"
         android:text="Password"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginEmail"
-        app:layout_constraintVertical_bias="0.027" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Don't have an account."
-        android:textColor="#ffbf69"
+        android:textColor="#ea698b"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginPassword"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.19" />
 
     <TextView
             android:id="@+id/logintoRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register."
-            android:textColor="#ffbf69"
+            android:textColor="#ea698b"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/loginButton"
             app:layout_constraintEnd_toEndOf="parent"
@@ -104,8 +105,8 @@
         android:id="@+id/loginButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="#ff7d00"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#ea698b"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -122,5 +123,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

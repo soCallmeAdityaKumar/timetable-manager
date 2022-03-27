@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/register4"
+    android:background="@drawable/register"
     android:layout_height="match_parent"
-    tools:context=".register">
+    tools:context=".firebase.register">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,29 +25,29 @@
             android:layout_height="wrap_content"
             android:padding="15dp"
             android:text="TIMETABLE MANAGER"
-            android:background="@drawable/curve"
-            android:textColor="#ef8354"
+            android:textColor="#f72585"
             android:textSize="35dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintHorizontal_bias="0.466"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.305" />
+            app:layout_constraintVertical_bias="0.231" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register"
-            android:textStyle="bold"
+            android:textColor="#f72585"
             android:textSize="25dp"
-            android:textColor="#ef8354"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.657" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -56,53 +56,53 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/curve"
-        android:backgroundTint="#ffd7ba"
+        android:backgroundTint="#3a86ff"
         android:padding="15dp"
         android:text="Email Id"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/curve"
-        android:backgroundTint="#ffd7ba"
+        android:backgroundTint="#3a86ff"
         android:padding="15dp"
         android:text="Password"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerEmail"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Have an account."
-        android:textColor="#ffd7ba"
+        android:textColor="#f72585"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerPassword"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <TextView
         android:id="@+id/registerToLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login."
-        android:textColor="#ffd7ba"
+        android:textColor="#f72585"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,14 +117,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="92dp"
-        android:backgroundTint="#ff7d00"
+        android:backgroundTint="#3a86ff"
         android:text="Register"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerPassword"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.503" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
