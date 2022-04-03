@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -23,6 +24,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.timetablemanager.futuretask.FutureTask
 import com.example.timetablemanager.futuretask.FutureTaskRecyclerViewAdapter
 import com.example.timetablemanager.futuretask.addtask
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.internal.ContextUtils.getActivity
 import com.google.android.material.navigation.NavigationView
@@ -35,6 +37,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val MaterialToolbar:MaterialToolbar=findViewById(R.id.materialtoolbar)
+        val drawerlayout:DrawerLayout=findViewById(R.id.drawerlayout)
+        val navigationview:NavigationView=findViewById(R.id.navigationview)
+
+
+
+
         val tablayout=findViewById<TabLayout>(R.id.tabLayout)
 
         val viewpager=findViewById<ViewPager2>(R.id.viewpager)
@@ -79,9 +88,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
-            R.id.AddAccount -> Toast.makeText(this,"Add Account Selected",Toast.LENGTH_SHORT).show()
-            R.id.Signout -> Toast.makeText(this,"Signout Selected",Toast.LENGTH_SHORT).show()
-            R.id.Profile -> Toast.makeText(this,"Profile Selected",Toast.LENGTH_SHORT).show()
+            R.id.AddAccountMenu -> Toast.makeText(this,"Add Account Selected",Toast.LENGTH_LONG).show()
+            R.id.SignoutMenu -> Toast.makeText(this,"Signout Selected",Toast.LENGTH_LONG).show()
+            R.id.ProfileMenu -> Toast.makeText(this,"Profile Selected",Toast.LENGTH_LONG).show()
         }
         return super.onOptionsItemSelected(item)
     }

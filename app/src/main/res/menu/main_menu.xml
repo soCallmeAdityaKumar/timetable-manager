@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/HomeMenu"/>
     <item android:title="Profile"
-        android:id="@+id/Profile"
+        android:icon="@drawable/ic_account"
+        android:id="@+id/ProfileMenu"
         />
     <item
         android:title="Add Account"
-        android:id="@+id/AddAccount"/>
+        android:icon="@drawable/ic_addacount"
+        android:id="@+id/AddAccountMenu"/>
     <item
         android:title="Signout"
-        android:id="@+id/Signout"/>
+        android:icon="@drawable/ic_logout"
+        android:id="@+id/SignoutMenu"/>
 
 </menu>
