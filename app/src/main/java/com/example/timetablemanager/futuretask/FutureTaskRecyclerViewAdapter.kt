@@ -6,26 +6,35 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.timetablemanager.R
+import com.example.timetablemanager.Roomdatabase.RoomEntity
 
-class FutureTaskRecyclerViewAdapter(private val items:ArrayList<String>): RecyclerView.Adapter<FutureTaskRecyclerViewAdapter.FutureTaskViewHolder>() {
+class FutureTaskRecyclerViewAdapter: RecyclerView.Adapter<FutureTaskRecyclerViewAdapter.FutureTaskViewHolder>() {
 
-
+private var taskList= emptyList<RoomEntity>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FutureTaskViewHolder {
         val view=LayoutInflater.from(parent.context).inflate(R.layout.futuretaskitem_view,parent,false)
         return FutureTaskViewHolder(view)
     }
 
     override fun onBindViewHolder(holder:FutureTaskViewHolder, position: Int) {
-        val currentitem=items[position]
-        holder.titleView.text=currentitem
+        val currentitem=taskList[position]
+        holder.FutureTaskItemViewTaskName.text= currentitem.taskName
+        holder.FutureTaskItemViewTaskDescription.text= currentitem.taskDescription
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return taskList.size
     }
     class FutureTaskViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
 
-        val titleView=itemView.findViewById<TextView>(R.id.FutureTaskRecyclerViewTextView)
+        val FutureTaskItemViewTaskName=itemView.findViewById<TextView>(R.id.FutureTaskItemViewTaskName)
+        val FutureTaskItemViewTaskDescription=itemView.findViewById<TextView>(R.id.FutureTaskItemViewTaskDescription)
+
+    }
+    fun setTask(roomEntity:List<RoomEntity>){
+        this.taskList=roomEntity
+
+        notifyDataSetChanged()
     }
 
 }

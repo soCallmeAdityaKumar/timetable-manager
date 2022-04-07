@@ -5,28 +5,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.ViewCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
-import androidx.navigation.NavHostController
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
-import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.example.timetablemanager.futuretask.FutureTask
-import com.example.timetablemanager.futuretask.FutureTaskRecyclerViewAdapter
-import com.example.timetablemanager.futuretask.addtask
+import com.example.timetablemanager.Roomdatabase.addtaskActivity
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.internal.ContextUtils.getActivity
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -53,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
             val addingactionbutton=findViewById<FloatingActionButton>(R.id.AddingActionButton)
         addingactionbutton?.setOnClickListener {
-            val intent = Intent(this,addtask::class.java)
+            val intent = Intent(this,addtaskActivity::class.java)
             startActivity(intent)
         }
 

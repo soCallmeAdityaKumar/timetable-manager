@@ -14,7 +14,7 @@
             android:exported="true">
 
         </activity>
-        <activity android:name=".futuretask.addtask"
+        <activity android:name=".Roomdatabase.addtaskActivity"
             android:exported="true">
 
         </activity>

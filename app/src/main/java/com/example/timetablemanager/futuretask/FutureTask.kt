@@ -8,6 +8,8 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
@@ -17,6 +19,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.timetablemanager.*
+import com.example.timetablemanager.Roomdatabase.RoomEntity
+import com.example.timetablemanager.Roomdatabase.ViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
@@ -28,6 +32,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
  */
 class FutureTask : Fragment() {
 
+    private lateinit var viewModel: ViewModel
 
 lateinit var navController: NavController
     override fun onCreateView(
@@ -42,23 +47,20 @@ lateinit var navController: NavController
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val FutureRecylerView=view.findViewById<RecyclerView>(R.id.FutureTaskRecyclerView)
-        FutureRecylerView?.layoutManager= LinearLayoutManager(activity)
-        val items=fetchData()
-        FutureRecylerView?.adapter=FutureTaskRecyclerViewAdapter(items)
+ val roomEntity:RoomEntity
+
+        val FutureTaskRecylerView=view.findViewById<RecyclerView>(R.id.FutureTaskRecyclerView)
+        val adapter=FutureTaskRecyclerViewAdapter()
+        FutureTaskRecylerView.adapter=adapter
+        FutureTaskRecylerView.layoutManager=LinearLayoutManager(requireContext())
 
 
-
+        viewModel=ViewModelProvider(this).get(ViewModel::class.java)
+        viewModel.readAllTask.observe(viewLifecycleOwner, Observer {roomEntity-> adapter.setTask(roomEntity) })
 
 
     }
-    private fun fetchData():ArrayList<String>{
-        val list=ArrayList<String>()
-        for (i in 0 until 100){
-            list.add("item $i")
-        }
-        return  list
-    }
+
 
 
 
