@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/curve.xml" value="0.2395" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/ic_delete.xml" value="0.1" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2165" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/ic_password.xml" value="0.199" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/anthon.xml" value="0.28020833333333334" />
@@ -16,14 +17,17 @@
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_login.xml" value="0.15670289855072464" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_postponed_task.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_second_activity_main.xml" value="0.11041666666666666" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_update_task.xml" value="0.1" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/futuretask_item.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/futuretaskitem_view.xml" value="0.2" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/goalstatusitem_view.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/login.xml" value="0.2" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/popupupdatetask.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/postponedtaskitem_view.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/register.xml" value="0.264" />
-        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/updatetaskactivity.xml" value="1.511513157894737" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/updatetaskactivity.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/menu/main_menu.xml" value="0.264" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/menu/updatedeletemenu.xml" value="0.25" />
       </map>
     </option>
   </component>

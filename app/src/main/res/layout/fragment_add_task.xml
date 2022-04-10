@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/addtask"
     android:layout_height="match_parent"
-    tools:context=".futuretask.addTask">
+    tools:context=".Roomdatabase.addtaskActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

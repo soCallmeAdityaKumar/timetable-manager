@@ -37,6 +37,9 @@
             android:exported="true">
 
         </activity>
+        <activity android:name=".Roomdatabase.updateTask"
+            android:exported="true"></activity>
+
     </application>
 
 </manifest>

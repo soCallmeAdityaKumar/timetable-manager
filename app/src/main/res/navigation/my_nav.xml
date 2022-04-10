@@ -5,34 +5,29 @@
     android:id="@+id/my_nav"
     app:startDestination="@id/futureTask">
 
-    <fragment
-        android:id="@+id/futureTask"
-        android:name="com.example.timetablemanager.futuretask.FutureTask"
-        android:label="fragment_future_task"
-        tools:layout="@layout/fragment_future_task" >
-        <action
-            android:id="@+id/action_futureTask_to_postponedTask"
-            app:destination="@id/postponedTask" />
-        <action
-            android:id="@+id/action_futureTask_to_goalStatus"
-            app:destination="@id/goalStatus" />
-        <action
-            android:id="@+id/action_futureTask_to_addTask"
-            app:destination="@id/addTask" />
-    </fragment>
-    <fragment
-        android:id="@+id/postponedTask"
-        android:name="com.example.timetablemanager.Postponedtask.PostponedTask"
-        android:label="fragment_postponed_task"
-        tools:layout="@layout/fragment_postponed_task" />
-    <fragment
-        android:id="@+id/goalStatus"
-        android:name="com.example.timetablemanager.GoalStatus.GoalStatus"
-        android:label="fragment_goal_status"
-        tools:layout="@layout/fragment_goal_status" />
-    <fragment
-        android:id="@+id/addTask"
-        android:name="com.example.timetablemanager.futuretask.addTask"
-        android:label="fragment_add_task"
-        tools:layout="@layout/fragment_add_task" />
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/futureTask">
+        <fragment
+            android:id="@+id/futureTask"
+            android:name="com.example.timetablemanager.futuretask.FutureTask"
+            android:label="fragment_future_task"
+            tools:layout="@layout/fragment_future_task">
+            <action
+                android:id="@+id/action_futureTask_to_postponedTask"
+                app:destination="@id/postponedTask" />
+            <action
+                android:id="@+id/action_futureTask_to_goalStatus"
+                app:destination="@id/goalStatus" />
+        </fragment>
+        <fragment
+            android:id="@+id/postponedTask"
+            android:name="com.example.timetablemanager.Postponedtask.PostponedTask"
+            android:label="fragment_postponed_task"
+            tools:layout="@layout/fragment_postponed_task" />
+        <fragment
+            android:id="@+id/goalStatus"
+            android:name="com.example.timetablemanager.GoalStatus.GoalStatus"
+            android:label="fragment_goal_status"
+            tools:layout="@layout/fragment_goal_status" />
+    </navigation>
 </navigation>
