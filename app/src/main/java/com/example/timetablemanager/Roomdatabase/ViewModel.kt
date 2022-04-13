@@ -4,6 +4,8 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import androidx.room.RoomDatabase
+import com.example.timetablemanager.Roomdatabase.Database.Companion.getDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -37,10 +39,11 @@ class ViewModel(application: Application):AndroidViewModel(application) {
     }
 
 
-//    fun getid(roomEntity: RoomEntity){
-//        viewModelScope.launch (Dispatchers.IO){
-//            repository.getId(roomEntity)
-//        }
+    fun getid(roomEntity: RoomEntity) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.getId(roomEntity)
+        }
+    }
 
 
      fun updateTask(roomEntity: RoomEntity){

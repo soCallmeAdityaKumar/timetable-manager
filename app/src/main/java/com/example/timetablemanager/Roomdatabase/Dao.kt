@@ -16,11 +16,13 @@ interface Dao {
     @Query("DELETE FROM TASKS")
     suspend fun deleteAll()
 
+
+
     @Update
     suspend fun updateTask(roomEntity: RoomEntity)
 
-//    @Query("SELECT id From Tasks " )
-//    suspend fun getId(roomEntity: RoomEntity)
+    @Query("SELECT id From Tasks " )
+    suspend fun getId(roomEntity: RoomEntity)
 
     @Query("SELECT *FROM Tasks ORDER BY id ASC")
     fun readAllTask():LiveData<List<RoomEntity>>

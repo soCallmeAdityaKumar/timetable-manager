@@ -19,7 +19,7 @@ import com.example.timetablemanager.Roomdatabase.ViewModel
  * Use the [FutureTask.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FutureTask : Fragment() {
+class FutureTask : Fragment() ,FutureTaskRecyclerViewAdapter.ITaskRVAdapter{
 
     private lateinit var viewModel: ViewModel
 
@@ -37,8 +37,6 @@ lateinit var navController: NavController
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val roomEntity:RoomEntity
-
-
         val FutureTaskRecylerView=view.findViewById<RecyclerView>(R.id.FutureTaskRecyclerView)
         val adapter=FutureTaskRecyclerViewAdapter(view.context,this)
 
@@ -74,6 +72,9 @@ lateinit var navController: NavController
 
 }
 
+    override fun onItemClicked(roomEntity: RoomEntity) {
+        viewModel.deletetask(roomEntity)
+    }
 
 
 }

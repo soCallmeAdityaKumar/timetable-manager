@@ -10,7 +10,7 @@ import kotlinx.parcelize.Parcelize
 @Entity(tableName = "Tasks")
 data class RoomEntity(
     @PrimaryKey(autoGenerate = true)
-    val id: Int=0,
+    val id: Int,
     var taskName:String,
     var taskDescription:String
 ):Parcelable

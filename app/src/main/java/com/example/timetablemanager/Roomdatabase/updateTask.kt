@@ -12,6 +12,7 @@ import com.example.timetablemanager.R
 
 class updateTask:AppCompatActivity() {
     private lateinit var viewModel: ViewModel
+    private lateinit var Database:Database
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +44,7 @@ class updateTask:AppCompatActivity() {
         }
 
     }
+
     private fun inputCheck(AddTaskEditText: String, AddDescription: String): Boolean {
         return !(AddTaskEditText.isEmpty()&& AddDescription.isEmpty())
 
