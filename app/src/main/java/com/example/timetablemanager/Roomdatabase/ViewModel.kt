@@ -39,11 +39,11 @@ class ViewModel(application: Application):AndroidViewModel(application) {
     }
 
 
-    fun getid(roomEntity: RoomEntity) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.getId(roomEntity)
-        }
-    }
+//    fun getid(roomEntity: RoomEntity) {
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.getId(roomEntity)
+//        }
+//    }
 
 
      fun updateTask(roomEntity: RoomEntity){

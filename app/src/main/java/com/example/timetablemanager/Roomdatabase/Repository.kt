@@ -15,9 +15,9 @@ class Repository (private val dao: Dao){
         dao.deleteAll()
     }
 
-    suspend fun getId(roomEntity: RoomEntity){
-        dao.getId(roomEntity)
-    }
+//    suspend fun getId(roomEntity: RoomEntity){
+//        dao.getId(roomEntity)
+//    }
     suspend fun updateTask(roomEntity: RoomEntity){
         dao.updateTask(roomEntity)
     }

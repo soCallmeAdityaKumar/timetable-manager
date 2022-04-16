@@ -31,10 +31,11 @@ class updateTask:AppCompatActivity() {
 
         var UpdateTaskName=findViewById<EditText>(R.id.UpdateTaskNameEditText).text.toString()
         var UpdateDescription=findViewById<EditText>(R.id.UpdateDescriptionEditText).text.toString()
+        val id=intent.getIntExtra("id",0)
 
         if(inputCheck(UpdateTaskName,UpdateDescription)){
 
-            var roomEntity=RoomEntity(0,UpdateTaskName,UpdateDescription)
+            var roomEntity=RoomEntity(id,UpdateTaskName,UpdateDescription)
             viewModel.updateTask(roomEntity)
             Toast.makeText(this, "Successfully updated the Task", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, MainActivity::class.java))

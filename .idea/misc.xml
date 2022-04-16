@@ -10,6 +10,7 @@
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/anthon.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/font.xml" value="0.14010416666666667" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/explicit.xml" value="0.1" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/forgotpassword.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_add_task.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_future_task.xml" value="0.1411371237458194" />
@@ -25,6 +26,7 @@
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/popupupdatetask.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/postponedtaskitem_view.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/register.xml" value="0.264" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/settingalarm.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/updatetaskactivity.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/menu/main_menu.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/menu/updatedeletemenu.xml" value="0.25" />

@@ -1,28 +1,45 @@
 package com.example.timetablemanager
 
 
+import android.app.AlarmManager
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Intent
+import android.os.Binder
+import android.os.Build
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.timetablemanager.Roomdatabase.addtaskActivity
+import com.example.timetablemanager.databinding.ActivityMainBinding
+import com.example.timetablemanager.notification.AlarmReceiver
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var navController: NavController
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         val MaterialToolbar:MaterialToolbar=findViewById(R.id.materialtoolbar)
         val drawerlayout:DrawerLayout=findViewById(R.id.drawerlayout)
         val navigationview:NavigationView=findViewById(R.id.navigationview)
@@ -60,7 +77,16 @@ class MainActivity : AppCompatActivity() {
             }
 
         }.attach()
+
+
     }
+
+
+
+
+
+
+
 
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp()||super.onSupportNavigateUp()
