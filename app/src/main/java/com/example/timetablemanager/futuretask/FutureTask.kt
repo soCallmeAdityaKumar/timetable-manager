@@ -55,6 +55,29 @@ lateinit var navController: NavController
         return view
     }
 
+    private var simpleCallback=object :ItemTouchHelper.SimpleCallback(ItemTouchHelper.UP, ItemTouchHelper.DOWN ){
+        override fun onMove(
+            recyclerView: RecyclerView,
+            viewHolder: RecyclerView.ViewHolder,
+            target: RecyclerView.ViewHolder
+        ): Boolean {
+            var startPosition=viewHolder.adapterPosition
+            var endPosition=target.adapterPosition
+
+
+            return true
+        }
+
+        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+            TODO("Not yet implemented")
+        }
+
+//        override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+//            return true
+//        }
+
+    }
+
 //
 
 
@@ -101,6 +124,8 @@ lateinit var navController: NavController
     override fun onItemClicked(roomEntity: RoomEntity) {
         viewModel.deletetask(roomEntity)
     }
+
+
 
 
 

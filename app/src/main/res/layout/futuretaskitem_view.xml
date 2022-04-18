@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".futuretask.FutureTask"
     android:layout_alignParentBottom="true">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
+            app:cardCornerRadius="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -23,12 +23,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@color/teal_700">
+                    android:background="#fec89a">
 
                         <ImageView
                             android:id="@+id/delete"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@drawable/ic_list"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="5dp"
-                                    android:padding="10dp"
+                                    android:padding="5dp"
+                                  android:textColor="#e07a5f"
                                     android:text="Task Name : "
                                     android:textSize="20sp"
                                     android:textStyle="bold"
@@ -70,7 +71,8 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:inputType="textMultiLine"
-                                    android:padding="10dp"
+                                    android:padding="5dp"
+                                    android:textColor="#e07a5f"
                                     android:text="TaskName"
                                     android:textSize="20sp"
                                     app:layout_constraintBottom_toBottomOf="parent"
@@ -98,9 +100,10 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="5dp"
-                                    android:padding="10dp"
+                                    android:padding="5dp"
                                     android:text="Task Description :"
                                     android:textSize="20sp"
+                                    android:textColor="#e07a5f"
                                     android:textStyle="bold"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
@@ -112,11 +115,11 @@
                                     android:id="@+id/FutureTaskItemViewTaskDescription"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-
                                     android:inputType="textMultiLine"
-                                    android:padding="10dp"
+                                    android:padding="5dp"
                                     android:text="TaskDescription"
                                     android:textSize="20sp"
+                                    android:textColor="#e07a5f"
                                     app:layout_constraintBottom_toBottomOf="parent"
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintHorizontal_bias="1.0"

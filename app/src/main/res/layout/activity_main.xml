@@ -14,14 +14,16 @@
         android:orientation="vertical">
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
+            android:backgroundTint="#abc4ff"
             android:layout_height="wrap_content">
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/materialtoolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:title="Hello"
-                android:background="@color/white"
-                app:navigationIcon="@drawable/ic_navigationdrawer"/>
+<!--            <com.google.android.material.appbar.MaterialToolbar-->
+<!--                android:id="@+id/materialtoolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                app:title="Welcome to Your TimeTable Manager" />-->
+<!--&lt;!&ndash;                app:navigationIcon="@drawable/ic_navigationdrawer"&ndash;&gt;-->
+
+
         </com.google.android.material.appbar.AppBarLayout>
 
 <!--        <androidx.appcompat.widget.Toolbar-->
@@ -36,46 +38,58 @@
 
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
-            android:background="#b5179e"
             android:layout_height="wrap_content"
+            android:background="@color/teal_200"
             android:id="@+id/tabLayout" />
 
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#fae1dd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@android:drawable/ic_input_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="575dp"
-           >
 
 
 
-    </androidx.viewpager2.widget.ViewPager2>
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/AddingActionButton"
-                android:layout_width="50dp"
-                android:layout_height="500dp"
-                android:clickable="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.955"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_input_add" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
 
     </LinearLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationview"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/main_menu"
-        />
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/navigationview"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="start"-->
+<!--        app:menu="@menu/main_menu"-->
+<!--        />-->
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

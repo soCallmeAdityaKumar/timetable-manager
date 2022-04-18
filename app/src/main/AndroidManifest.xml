@@ -37,6 +37,11 @@
             android:exported="true">
 
         </activity>
+        <activity
+            android:name=".firestoreStorage.StorageActivity"
+            android:exported="true">
+
+        </activity>
         <activity android:name=".Roomdatabase.updateTask"
             android:exported="true"></activity>
         <receiver android:name=".notification.AlarmReceiver"></receiver>
