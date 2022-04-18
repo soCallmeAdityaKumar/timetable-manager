@@ -39,7 +39,7 @@
         <com.google.android.material.tabs.TabLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_200"
+            android:background="#f19c79"
             android:id="@+id/tabLayout" />
 
 <androidx.constraintlayout.widget.ConstraintLayout

@@ -9,7 +9,7 @@
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/drawable/ic_password.xml" value="0.199" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/anthon.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/font/font.xml" value="0.14010416666666667" />
-        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/explicit.xml" value="0.1" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/forgotpassword.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/fragment_add_task.xml" value="0.25" />
@@ -27,6 +27,7 @@
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/postponedtaskitem_view.xml" value="0.25" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/register.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/settingalarm.xml" value="0.25" />
+        <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/splashscreen.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/storageprofile.xml" value="0.10400000000000001" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/layout/updatetaskactivity.xml" value="0.264" />
         <entry key="..\:/Users/adi54/AndroidStudioProjects/TimeTableManager/app/src/main/res/menu/main_menu.xml" value="0.264" />

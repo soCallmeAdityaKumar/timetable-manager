@@ -95,8 +95,8 @@ private lateinit var binding: FragmentAddTaskBinding
 
 
             val NewtaskNotification= NotificationCompat.Builder(this,"TimeTable Manager")
-                .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle("TimeTable Manager")
+                .setSmallIcon(R.drawable.ic_lau_background)
+                .setContentTitle("TimeSand")
                 .setContentText("New Task Added")
                 .setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)

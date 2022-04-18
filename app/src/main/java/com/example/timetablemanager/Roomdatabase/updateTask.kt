@@ -6,6 +6,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.ViewModelProvider
 import com.example.timetablemanager.MainActivity
 import com.example.timetablemanager.R
@@ -39,6 +41,18 @@ class updateTask:AppCompatActivity() {
             viewModel.updateTask(roomEntity)
             Toast.makeText(this, "Successfully updated the Task", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, MainActivity::class.java))
+            val NewtaskNotification= NotificationCompat.Builder(this,"TimeTable Manager")
+                .setSmallIcon(R.drawable.ic_lau_background)
+                .setContentTitle("TimeSand")
+                .setContentText("Task Updated")
+                .setAutoCancel(true)
+                .setDefaults(NotificationCompat.DEFAULT_ALL)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .build()
+
+
+            val NotificationManager= NotificationManagerCompat.from(this)
+            NotificationManager.notify(1234,NewtaskNotification)
         }
         else{
             Toast.makeText(this,"Please Fill All the Data", Toast.LENGTH_LONG).show()

@@ -120,7 +120,7 @@
         android:id="@+id/addTaskbutton"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="#f72585"
+        android:backgroundTint="#f72585"
         android:text="Submit"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,37 +130,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.878" />
 
+
     <TextView
         android:id="@+id/selectedTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:text="8:45 PM"
-        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColor="#f72585"
         android:textSize="25dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577" />
-
-    <TextView
-        android:id="@+id/SelectedDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:text="01/01/2000"
-        android:textColor="@color/white"
-        android:textSize="25dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577" />
+        app:layout_constraintVertical_bias="0.579" />
 
     <Button
         android:id="@+id/SelectAlarmButton"
